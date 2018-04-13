@@ -4,6 +4,7 @@
 <script type="text/javascript">
 function funzioneMedia()
 {
+    var nome=document.forms["formDati"]["nome"].value;
     var voto1=document.forms["formDati"]["voto1"].value;
     var voto2=document.forms["formDati"]["voto2"].value;
     var voto3=document.forms["formDati"]["voto3"].value;
@@ -14,7 +15,7 @@ function funzioneMedia()
     voto3=Number(voto3);
     voto4=Number(voto4);
     voto5=Number(voto5);
-    document.write("Media" + " " + (voto1+voto2+voto3+voto4+voto5)/5);
+    document.write("Media" + " " + nome + " " + (voto1+voto2+voto3+voto4+voto5)/5);
 }
 </script>
 </head>
@@ -22,6 +23,9 @@ function funzioneMedia()
 <body>
 
 <form id="formDati" action="" method="" >
+Nome <input name="nome" type="text"/>
+<br>
+<br>
 Primo numero <input name="voto1" type="text"/>
 <br>
 <br>

@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<script type="text/javascript">
+function funzioneMedia()
+{
+    var nome=document.forms["formDati"]["nome"].value;
+    var voto1=document.forms["formDati"]["voto1"].value;
+    var voto2=document.forms["formDati"]["voto2"].value;
+    var voto3=document.forms["formDati"]["voto3"].value;
+    var voto4=document.forms["formDati"]["voto4"].value;
+    var voto5=document.forms["formDati"]["voto5"].value;
+    voto1=Number(voto1);
+    voto2=Number(voto2);
+    voto3=Number(voto3);
+    voto4=Number(voto4);
+    voto5=Number(voto5);
+    document.write("Media" + " " + nome + " " + (voto1+voto2+voto3+voto4+voto5)/5);
+}
+</script>
+</head>
+
+<body>
+
+<form id="formDati" action="" method="" >
+Nome <input name="nome" type="text"/>
+<br>
+<br>
+Primo numero <input name="voto1" type="text"/>
+<br>
+<br>
+Secondo numero <input name="voto2" type="text"/>
+<br>
+<br>
+Terzo numero <input name="voto3" type="text"/>
+<br>
+<br>
+Quarto numero <input name="voto4" type="text"/>
+<br>
+<br>
+Quinto numero <input name="voto5" type="text"/>
+<br>
+<br>
+
+<input type="button" value="Media" onclick="funzioneMedia()"/>
+</form>
+
+</body>
+</html>
